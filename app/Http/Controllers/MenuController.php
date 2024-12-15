@@ -7,12 +7,6 @@ use Illuminate\Http\Request; // Digunakan untuk menangani permintaan HTTP
 
 class MenuController extends Controller
 {
-    /**
-     * Menampilkan daftar menu dengan opsi pencarian.
-     *
-     * @param Request $request
-     * @return \Illuminate\View\View
-     */
     public function index(Request $request)
     {
         // Ambil nilai dari parameter query pencarian jika ada
