@@ -10,13 +10,6 @@ class Menu extends Model
     // Daftar atribut yang dapat diisi secara massal
     protected $fillable = ['kode_menu', 'kategori', 'deskripsi', 'harga'];
 
-    /**
-     * Scope pencarian berbasis kata kunci pada kolom tertentu.
-     *
-     * @param Builder $query
-     * @param string|null $searchTerm Kata kunci pencarian yang dimasukkan pengguna
-     * @return Builder Query builder dengan kondisi pencarian diterapkan
-     */
     public function scopeFilterBySearch(Builder $query, ?string $searchTerm): Builder
     {
         // Periksa apakah searchTerm tidak null atau kosong
